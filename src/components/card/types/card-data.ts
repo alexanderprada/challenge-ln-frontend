@@ -3,6 +3,7 @@ export interface CardData {
   linkToDetail: string;
   imageUrl: string;
   lead: string;
+  authorImageUrl?: string;
   description?: string;
   authorName?: string;
   readTime?: number;
