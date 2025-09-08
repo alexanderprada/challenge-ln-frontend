@@ -1,6 +1,6 @@
 import Text from "../../../text";
 import type { ListCategoryProps } from "../../types/list-category-props";
-import CategorySeparator from "../category-separator";
+import ItemSeparator from "../../../item-separator";
 const ListCategory = ({
   list,
   title,
@@ -19,7 +19,7 @@ const ListCategory = ({
             </Text>
           </a>
 
-          {withSeparator && index < list.length - 1 && <CategorySeparator />}
+          {withSeparator && index < list.length - 1 && <ItemSeparator />}
         </>
       ))}
     </div>

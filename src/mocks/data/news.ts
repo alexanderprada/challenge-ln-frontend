@@ -13,11 +13,12 @@ const newsResponse: NewsResponse = {
         "El Ministerio Público Fiscal ya bajó la información de uno de los aparatos secuestrados al exfuncionario Diego Spagnuolo y trabaja con los de los empresarios de la droguería Suizo Argentina",
       title:
         "Avanza el análisis de los teléfonos en el caso de las presuntas coimas: mensajes borrados, un celular roto y un Samsung que no pueden abrir",
-      url: "https://www.lanacion.com.ar/politica/avanza-el-analisis-de-los-telefonos-en-el-caso-de-las-presuntas-coimas-mensajes-borrados-un-celular-nid26082025/"
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
+      readTime: 6
     },
     {
       title: "Milei y una crisis sin fusibles",
-      url: "https://www.lanacion.com.ar/politica/javier-milei-y-una-crisis-sin-fusibles-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "El Cosmo",
       authorImage:
         "https://img.freepik.com/vector-premium/retrato-avatar-nino-caucasico-marco-redondo-ilustracion-vectorial-estilo-plano-dibujos-animados_551425-43.jpg?w=360",
@@ -29,7 +30,7 @@ const newsResponse: NewsResponse = {
     },
     {
       title: "Suspendieron a la jueza Julieta Makintach",
-      url: "https://www.lanacion.com.ar/seguridad/suspendieron-a-la-jueza-julieta-makintach-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "El Cosmo",
       authorImage:
         "https://img.freepik.com/vector-premium/retrato-avatar-nino-caucasico-marco-redondo-ilustracion-vectorial-estilo-plano-dibujos-animados_551425-43.jpg?w=360",
@@ -42,7 +43,7 @@ const newsResponse: NewsResponse = {
     {
       title:
         "Kicillof contó que analizó ser candidato testimonial en las elecciones",
-      url: "https://www.lanacion.com.ar/politica/kicillof-conto-que-analizo-ser-candidato-testimonial-esta-en-peligro-la-democracia-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "El Cosmo",
       authorImage:
         "https://img.freepik.com/vector-premium/retrato-avatar-nino-caucasico-marco-redondo-ilustracion-vectorial-estilo-plano-dibujos-animados_551425-43.jpg?w=360",
@@ -54,7 +55,7 @@ const newsResponse: NewsResponse = {
     },
     {
       title: "Qué se espera de la economía para el día después",
-      url: "https://www.lanacion.com.ar/politica/kicillof-conto-que-analizo-ser-candidato-testimonial-esta-en-peligro-la-democracia-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "José Del Río",
       authorImage:
         "https://resizer.glanacion.com/resizer/v2/https%3A%2F%2Fauthor-service-images-prod-us-east-1.publishing.aws.arc.pub%2Flanacionar%2F271850b8-5085-4004-b5ef-6d95e1c04cf4.png?auth=7c3eda4833054a3e037f73cfc3c648613ea45083f20f7a23342c819b88943f8b&width=80&quality=70&smart=false",
@@ -76,11 +77,11 @@ const newsResponse: NewsResponse = {
         "El Ministerio Público Fiscal ya bajó la información de uno de los aparatos secuestrados al exfuncionario Diego Spagnuolo y trabaja con los de los empresarios de la droguería Suizo Argentina",
       title:
         "Avanza el análisis de los teléfonos en el caso de las presuntas coimas: mensajes borrados, un celular roto y un Samsung que no pueden abrir",
-      url: "https://www.lanacion.com.ar/politica/avanza-el-analisis-de-los-telefonos-en-el-caso-de-las-presuntas-coimas-mensajes-borrados-un-celular-nid26082025/"
+      url: "https://challenge-ln-frontend.vercel.app/noticia"
     },
     {
       title: "Milei y una crisis sin fusibles",
-      url: "https://www.lanacion.com.ar/politica/javier-milei-y-una-crisis-sin-fusibles-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "El Cosmo",
       authorImage:
         "https://img.freepik.com/vector-premium/retrato-avatar-nino-caucasico-marco-redondo-ilustracion-vectorial-estilo-plano-dibujos-animados_551425-43.jpg?w=360",
@@ -92,7 +93,7 @@ const newsResponse: NewsResponse = {
     },
     {
       title: "Suspendieron a la jueza Julieta Makintach",
-      url: "https://www.lanacion.com.ar/seguridad/suspendieron-a-la-jueza-julieta-makintach-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "El Cosmo",
       authorImage:
         "https://img.freepik.com/vector-premium/retrato-avatar-nino-caucasico-marco-redondo-ilustracion-vectorial-estilo-plano-dibujos-animados_551425-43.jpg?w=360",
@@ -105,7 +106,7 @@ const newsResponse: NewsResponse = {
     {
       title:
         "Kicillof contó que analizó ser candidato testimonial en las elecciones",
-      url: "https://www.lanacion.com.ar/politica/kicillof-conto-que-analizo-ser-candidato-testimonial-esta-en-peligro-la-democracia-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "El Cosmo",
       authorImage:
         "https://img.freepik.com/vector-premium/retrato-avatar-nino-caucasico-marco-redondo-ilustracion-vectorial-estilo-plano-dibujos-animados_551425-43.jpg?w=360",
@@ -117,7 +118,7 @@ const newsResponse: NewsResponse = {
     },
     {
       title: "Qué se espera de la economía para el día después",
-      url: "https://www.lanacion.com.ar/politica/kicillof-conto-que-analizo-ser-candidato-testimonial-esta-en-peligro-la-democracia-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "José Del Río",
       authorImage:
         "https://resizer.glanacion.com/resizer/v2/https%3A%2F%2Fauthor-service-images-prod-us-east-1.publishing.aws.arc.pub%2Flanacionar%2F271850b8-5085-4004-b5ef-6d95e1c04cf4.png?auth=7c3eda4833054a3e037f73cfc3c648613ea45083f20f7a23342c819b88943f8b&width=80&quality=70&smart=false",
@@ -139,11 +140,11 @@ const newsResponse: NewsResponse = {
         "El Ministerio Público Fiscal ya bajó la información de uno de los aparatos secuestrados al exfuncionario Diego Spagnuolo y trabaja con los de los empresarios de la droguería Suizo Argentina",
       title:
         "Avanza el análisis de los teléfonos en el caso de las presuntas coimas: mensajes borrados, un celular roto y un Samsung que no pueden abrir",
-      url: "https://www.lanacion.com.ar/politica/avanza-el-analisis-de-los-telefonos-en-el-caso-de-las-presuntas-coimas-mensajes-borrados-un-celular-nid26082025/"
+      url: "https://challenge-ln-frontend.vercel.app/noticia"
     },
     {
       title: "Milei y una crisis sin fusibles",
-      url: "https://www.lanacion.com.ar/politica/javier-milei-y-una-crisis-sin-fusibles-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "El Cosmo",
       authorImage:
         "https://img.freepik.com/vector-premium/retrato-avatar-nino-caucasico-marco-redondo-ilustracion-vectorial-estilo-plano-dibujos-animados_551425-43.jpg?w=360",
@@ -155,7 +156,7 @@ const newsResponse: NewsResponse = {
     },
     {
       title: "Suspendieron a la jueza Julieta Makintach",
-      url: "https://www.lanacion.com.ar/seguridad/suspendieron-a-la-jueza-julieta-makintach-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "El Cosmo",
       authorImage:
         "https://img.freepik.com/vector-premium/retrato-avatar-nino-caucasico-marco-redondo-ilustracion-vectorial-estilo-plano-dibujos-animados_551425-43.jpg?w=360",
@@ -168,7 +169,7 @@ const newsResponse: NewsResponse = {
     {
       title:
         "Kicillof contó que analizó ser candidato testimonial en las elecciones",
-      url: "https://www.lanacion.com.ar/politica/kicillof-conto-que-analizo-ser-candidato-testimonial-esta-en-peligro-la-democracia-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "El Cosmo",
       authorImage:
         "https://img.freepik.com/vector-premium/retrato-avatar-nino-caucasico-marco-redondo-ilustracion-vectorial-estilo-plano-dibujos-animados_551425-43.jpg?w=360",
@@ -180,7 +181,7 @@ const newsResponse: NewsResponse = {
     },
     {
       title: "Qué se espera de la economía para el día después",
-      url: "https://www.lanacion.com.ar/politica/kicillof-conto-que-analizo-ser-candidato-testimonial-esta-en-peligro-la-democracia-nid26082025/",
+      url: "https://challenge-ln-frontend.vercel.app/noticia",
       author: "José Del Río",
       authorImage:
         "https://resizer.glanacion.com/resizer/v2/https%3A%2F%2Fauthor-service-images-prod-us-east-1.publishing.aws.arc.pub%2Flanacionar%2F271850b8-5085-4004-b5ef-6d95e1c04cf4.png?auth=7c3eda4833054a3e037f73cfc3c648613ea45083f20f7a23342c819b88943f8b&width=80&quality=70&smart=false",
