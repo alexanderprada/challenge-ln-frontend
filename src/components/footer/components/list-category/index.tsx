@@ -9,7 +9,11 @@ const ListCategory = ({
   titleWeight = "regular"
 }: ListCategoryProps) => {
   return (
-    <div className="flex flex-row flex-wrap items-center gap-2">
+    <div
+      data-testid={`list-${title}`}
+      role="navigation"
+      className="flex flex-row flex-wrap items-center gap-2"
+    >
       {title && <Text weight={titleWeight}>{title}</Text>}
       {list.map((category, index) => (
         <>

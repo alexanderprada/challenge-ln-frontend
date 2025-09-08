@@ -19,6 +19,7 @@ export default function Text({
   const Tag = variant;
   return (
     <Tag
+      data-testid={`text-${children}`}
       className={`${sizeClasses[size]} ${weightClasses[weight]} ${colorsText[color]} ${textAlign[align]} font-family-body ${className}`}
     >
       {children}

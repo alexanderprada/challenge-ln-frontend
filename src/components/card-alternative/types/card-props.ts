@@ -1,3 +1,4 @@
+import type { CardAuthorVariant } from "./card-author-props";
 import type { CardData } from "./card-data";
 
 export const imageAlignConst = {
@@ -7,15 +8,8 @@ export const imageAlignConst = {
   bottom: "md:flex-col-reverse"
 } as const;
 
-export const variantCard = {
-  DEFAULT: "DEFAULT",
-  HERO: "HERO",
-  COMPACT: "COMPACT"
-};
-
 export type ImageAlign = keyof typeof imageAlignConst;
 export type TitleAlign = "start" | "center" | "end";
-export type CardVariant = keyof typeof variantCard;
 
 export interface CardResponsive {
   default?: number;
@@ -26,6 +20,13 @@ export interface CardResponsive {
 }
 export interface CardProps {
   cardData: CardData;
+  onlySuscriptors?: boolean;
+  withImage?: boolean;
+  imageAlign?: ImageAlign;
+  titleAlign?: TitleAlign;
+  withAuthor?: boolean;
+  authorVariant?: CardAuthorVariant;
+  withSubtitle?: boolean;
   className?: string;
-  variant?: CardVariant;
+  isMain?: boolean;
 }

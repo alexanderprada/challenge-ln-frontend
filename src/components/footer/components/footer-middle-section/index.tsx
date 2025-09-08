@@ -30,7 +30,10 @@ const FooterMiddleSection = () => {
   ];
 
   return (
-    <section className="hidden flex-col gap-8 sm:flex">
+    <section
+      data-testid="footer-middle-section-test"
+      className="hidden flex-col gap-8 sm:flex"
+    >
       <ListCategory
         list={listCategories.map((category) => ({
           link: "#",
@@ -64,7 +67,10 @@ const FooterMiddleSection = () => {
           withSeparator={false}
         />
       </div>
-      <div className="border-light-neutral-300 hidden border-b sm:block" />
+      <div
+        data-testid="line-separator"
+        className="border-light-neutral-300 hidden border-b sm:block"
+      />
     </section>
   );
 };

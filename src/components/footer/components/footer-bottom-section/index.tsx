@@ -16,7 +16,10 @@ const FooterBottomSection = () => {
 
   return (
     <section className="flex-col gap-8 sm:flex">
-      <div className="hidden flex-row sm:flex">
+      <div
+        data-testid="list-category-captcha"
+        className="hidden flex-row sm:flex"
+      >
         <ListCategory
           list={listCategories.map((category) => ({
             link: "#",

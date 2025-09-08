@@ -6,6 +6,7 @@ import {
   textAlign,
   weightClasses
 } from "../../types/texts";
+import Text from "../text";
 
 export default function Title({
   children,
@@ -21,9 +22,12 @@ export default function Title({
   const TagTitle = variant;
   return (
     <TagTitle
+      data-testid="text"
       className={`${sizeClasses[size]} ${weightClasses[weight]} font-family-title ${textAlign[align]} ${colorsText[color]} ${className}`}
     >
-      <span className={`${weightClasses[leadWeight]}`}>{lead} </span>
+      <Text variant="span" size="xl" color="lightBlue500" weight={leadWeight}>
+        {lead}{" "}
+      </Text>
       {children}
     </TagTitle>
   );

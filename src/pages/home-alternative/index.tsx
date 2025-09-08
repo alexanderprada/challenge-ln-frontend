@@ -9,13 +9,29 @@ function Home() {
 
   return (
     <>
+      <Card
+        cardData={{
+          linkToDetail: news[0].url,
+          authorName: news[0].author,
+          imageUrl: news[0].imageUrl,
+          authorImageUrl: news[0].authorImage,
+          description: news[0].subtitle,
+          readTime: news[0].readTime,
+          title: news[0].title,
+          lead: news[0].lead,
+          badge: news[0].badge
+        }}
+        isMain
+        className="flex flex-col"
+        key={news[0].title}
+      />
       <section className={sectionClassName}>
         <div className="border-bottom row-span-1 px-4 pb-5 sm:px-0">
           <Title size="xl" weight="bold">
             Focal Izquierdo
           </Title>
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-6 sm:grid-rows-2 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-5 sm:grid-rows-2 md:grid-cols-6 lg:grid-cols-12">
           <Card
             cardData={{
               linkToDetail: news[0].url,
@@ -28,8 +44,8 @@ function Home() {
               lead: news[0].lead,
               badge: news[0].badge
             }}
-            variant="DEFAULT"
-            className="col-span-1 flex flex-col sm:col-span-4 sm:row-span-2 lg:col-span-8 lg:row-span-2"
+            imageAlign="bottom"
+            className="border-right col-span-1 flex flex-col sm:col-span-4 sm:row-span-2 lg:col-span-8 lg:row-span-2"
             key={news[0].title}
           />
           <Card
@@ -44,7 +60,7 @@ function Home() {
               lead: news[1].lead,
               badge: news[1].badge
             }}
-            variant="COMPACT"
+            withSubtitle={false}
             className="border-bottom col-span-1 flex flex-col sm:col-span-2 sm:row-span-1 lg:col-span-4 lg:row-span-1"
             key={news[1].title}
           />
@@ -60,7 +76,7 @@ function Home() {
               lead: news[2].lead,
               badge: news[2].badge
             }}
-            variant="HERO"
+            withSubtitle={false}
             className="col-span-1 flex flex-col sm:col-span-2 sm:row-span-1 lg:col-span-4"
             key={news[2].title}
           />
@@ -72,7 +88,7 @@ function Home() {
             Focal Derecho
           </Title>
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-6 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-6 lg:grid-cols-12">
           <Card
             cardData={{
               linkToDetail: news[3].url,
@@ -85,7 +101,8 @@ function Home() {
               lead: news[3].lead,
               badge: news[3].badge
             }}
-            className="md:border-right col-span-1 flex flex-col sm:col-span-2 lg:col-span-8 lg:row-span-2"
+            withImage={false}
+            className="border-right col-span-1 flex flex-col sm:col-span-2 lg:col-span-8 lg:row-span-2"
             key={news[3].title}
           />
           <Card
@@ -100,6 +117,7 @@ function Home() {
               lead: news[4].lead,
               badge: news[4].badge
             }}
+            withSubtitle={false}
             className="col-span-1 flex flex-col sm:col-span-4 lg:col-span-4 lg:row-span-1"
             key={news[4].title}
           />
@@ -111,7 +129,7 @@ function Home() {
             Card Group x2
           </Title>
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-6 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-6 lg:grid-cols-12">
           <Card
             cardData={{
               linkToDetail: news[5].url,
@@ -150,7 +168,7 @@ function Home() {
             Card Group x6
           </Title>
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-6 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-6 lg:grid-cols-12">
           <Card
             cardData={{
               linkToDetail: news[7].url,
@@ -163,6 +181,7 @@ function Home() {
               lead: news[7].lead,
               badge: news[7].badge
             }}
+            withSubtitle={false}
             className="border-right col-span-1 flex flex-col sm:col-span-2 lg:col-span-4"
             key={news[7].title}
           />
@@ -178,6 +197,7 @@ function Home() {
               lead: news[8].lead,
               badge: news[8].badge
             }}
+            withSubtitle={false}
             className="border-right col-span-1 flex flex-col sm:col-span-2 lg:col-span-4"
             key={news[8].title}
           />
@@ -193,6 +213,7 @@ function Home() {
               lead: news[9].lead,
               badge: news[9].badge
             }}
+            withSubtitle={false}
             className="col-span-1 flex flex-col sm:col-span-2 lg:col-span-4"
             key={news[9].title}
           />
@@ -208,6 +229,7 @@ function Home() {
               lead: news[10].lead,
               badge: news[10].badge
             }}
+            withSubtitle={false}
             className="border-right col-span-1 flex flex-col sm:col-span-2 lg:col-span-4"
             key={news[10].title}
           />
@@ -223,6 +245,7 @@ function Home() {
               lead: news[11].lead,
               badge: news[11].badge
             }}
+            withSubtitle={false}
             className="border-right col-span-1 flex flex-col sm:col-span-2 lg:col-span-4"
             key={news[11].title}
           />
@@ -238,6 +261,7 @@ function Home() {
               lead: news[12].lead,
               badge: news[12].badge
             }}
+            withSubtitle={false}
             className="col-span-1 flex flex-col sm:col-span-2 lg:col-span-4"
             key={news[12].title}
           />

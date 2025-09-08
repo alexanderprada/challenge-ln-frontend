@@ -53,3 +53,8 @@
   @apply border-r;
   @apply border-neutral-300;
 }
+
+.loader {
+  left: 50%;
+  transform: translateX(-50%);
+}

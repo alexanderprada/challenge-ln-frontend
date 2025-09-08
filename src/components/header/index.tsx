@@ -45,11 +45,13 @@ export default function Header() {
           />
         </div>
 
-        <img
-          className="h-max max-w-max"
-          alt="logo-LANACION"
-          src={LogoLANACION}
-        />
+        <a href="/" title="Boton para volver al inicio de LA NACION">
+          <img
+            className="h-max max-w-max"
+            alt="logo-LANACION"
+            src={LogoLANACION}
+          />
+        </a>
 
         <div className="hidden flex-row items-center gap-6 xl:flex">
           <Button

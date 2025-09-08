@@ -1,6 +1,9 @@
 const ItemSeparator = () => {
   return (
-    <span className="bg-light-neutral-400 inline-block h-1 w-1 rounded-full" />
+    <span
+      data-testid="item-separator-test"
+      className="bg-light-neutral-400 inline-block h-1 w-1 rounded-full"
+    />
   );
 };
 

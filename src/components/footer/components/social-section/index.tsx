@@ -52,8 +52,11 @@ const SocialSection = () => {
         src={LogoLANACION}
       />
       <div className="border-light-neutral-300 border-b sm:hidden" />
-      <div className="flex flex-col gap-8 sm:flex-row">
-        <div className="flex flex-row items-center justify-center gap-8">
+      <div className="flex flex-col gap-8 sm:flex-row" role="navigation">
+        <div
+          data-testid="social-network-list"
+          className="flex flex-row items-center justify-center gap-8"
+        >
           {socialNetworks.map((social) => (
             <Social {...social} />
           ))}
@@ -63,7 +66,10 @@ const SocialSection = () => {
           alt="logo-LANACION"
           src={LogoLANACION}
         />
-        <div className="flex flex-row items-center justify-center gap-8">
+        <div
+          data-testid="stores-list"
+          className="flex flex-row items-center justify-center gap-8"
+        >
           {stores.map((store) => (
             <Social {...store} />
           ))}

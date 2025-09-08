@@ -13,12 +13,10 @@ const CardAuthor = ({
     ? "w-16 h-16 max-w-16 max-h-16"
     : "w-14 h-14 max-w-14 max-h-14";
   return (
-    <div
-      className={`flex items-center gap-1 pb-3 ${isVertical && "flex-col self-center"}`}
-    >
+    <div className={`flex items-center gap-3 pb-3 ${isVertical && "flex-col"}`}>
       {variant !== "onlyText" && image && (
         <CardImage
-          className={`${classImage} rounded-full object-cover`}
+          classImage={`${classImage} object-cover rounded-full`}
           alt={name}
           src={image}
         />

@@ -1,27 +1,21 @@
-import { imageAlignConst, type CardProps } from "./types/card-props";
 import CardImage from "./components/card-image";
 import Title from "../title";
 import CardAuthor from "./components/card-author";
 import Text from "../text";
+import type { CardProps } from "./types/card-props";
+import type { CardAuthorVariant } from "./types/card-author-props";
 
-const Card = ({
-  cardData,
-  authorVariant = "onlyText",
-  imageAlign = "top",
-  titleAlign = "start",
-  withAuthor = true,
-  withImage = true,
-  withSubtitle = true,
-  className = "",
-  isMain = false
-}: CardProps) => {
+const Card = ({ cardData, className = "", variant = "DEFAULT" }: CardProps) => {
+  const authorVariant = {
+    DEFAULT: "onlyText",
+    COMPACT: "horizontal",
+    HERO: "vertical"
+  };
   return (
     <article className={className}>
       <a href={cardData.linkToDetail} title={cardData.title}>
-        <figure
-          className={`relative flex flex-col ${imageAlignConst[imageAlign]} ${isMain && "w-full"}`}
-        >
-          {withImage && (
+        <figure className={`relative flex flex-col`}>
+          {variant === "DEFAULT" && (
             <CardImage
               alt={cardData.title}
               src={cardData.imageUrl}
@@ -29,35 +23,30 @@ const Card = ({
             />
           )}
           <div
-            className={`${isMain && "absolute bottom-0 left-1/2 -translate-x-1/2"} z-50 m-auto flex max-w-[925px] flex-col gap-3 px-4 sm:px-0 ${["left", "right"].includes(imageAlign) ? "w-full md:w-6/8 lg:w-6/8" : "w-full"}`}
+            className={`z-50 m-auto flex max-w-[925px] flex-col gap-3 px-4 sm:px-0`}
           >
             <Title
-              align={titleAlign}
+              align={variant === "HERO" ? "center" : "start"}
               variant="h2"
               weight="medium"
               size="xl"
-              className={isMain ? "text-xs text-white sm:text-xl" : ""}
               lead={cardData.lead}
             >
               {cardData.title}
             </Title>
-            {!isMain && withSubtitle && (
+            {variant === "DEFAULT" && (
               <Text weight="light" size="sm">
                 {cardData.description}
               </Text>
             )}
-            {withAuthor && cardData.authorName && (
+            {cardData.authorName && (
               <CardAuthor
-                variant={authorVariant}
+                variant={authorVariant[variant] as CardAuthorVariant}
                 name={cardData.authorName}
                 image={cardData.authorImageUrl}
-                colorText={isMain ? "neutralWhite" : "lightNeutral900"}
               />
             )}
           </div>
-          {isMain && (
-            <div className="absolute bottom-0 left-0 h-40 w-full bg-gradient-to-t from-black/85 from-15% to-transparent sm:h-80" />
-          )}
         </figure>
       </a>
     </article>

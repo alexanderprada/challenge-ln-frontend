@@ -1,6 +1,6 @@
 export interface CardImageProps {
   src: string;
   alt: string;
-  className?: string;
+  classImage?: string;
   badge?: string;
 }
