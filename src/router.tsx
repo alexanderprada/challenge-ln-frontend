@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Home from "./pages/home";
-import Noticia from "./pages/news-detail";
 import MainLayout from "./layouts/main-layout";
+import NewsDetail from "./pages/news-detail";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     path: "/noticia",
     element: (
       <MainLayout>
-        <Noticia />
+        <NewsDetail />
       </MainLayout>
     )
   }
