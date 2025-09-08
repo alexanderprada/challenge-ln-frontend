@@ -1,4 +1,4 @@
-import Card from "../../components/card";
+/* import Card from "../../components/card";
 import Title from "../../components/title";
 import newsResponse from "../../mocks/data/news";
 
@@ -272,3 +272,4 @@ function Home() {
 }
 
 export default Home;
+ */
